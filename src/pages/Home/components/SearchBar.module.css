@@ -1,0 +1,37 @@
+:root {
+    --mainColor: rgb(117, 117, 117);
+    --mainColorLight: rgb(190, 190, 190);
+    --secondaryColor: rgb(54, 54, 54);
+    --textColor: #eee;
+  }
+
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    color: var(--textColor);
+    background-color: var(--secondaryColor);
+}
+
+.searchLable {
+    width: auto;
+    text-align: start;
+}
+
+.searchBox {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    height: 2rem;
+}
+.btn {
+    font-weight: 600;
+    color: var(--mainColorLight);
+    background-color: var(--secondaryColor);
+}

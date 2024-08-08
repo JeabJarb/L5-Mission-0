@@ -1,0 +1,99 @@
+:root {
+    --mainColor: rgb(117, 117, 117);
+    --mainColorLight: rgb(190, 190, 190);
+    --secondaryColor: rgb(54, 54, 54);
+    --textColor: #eee;
+  }
+  
+  .headerStyling {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+  }
+
+  .logoImg {
+    width: 40px;
+  }
+
+  .aStyling {
+    margin: 0 2rem;
+    color: var(--textColor);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .aStyling:hover {
+    color: var(--secondaryColor);
+  }
+
+  .loginBtn {
+    height: 2.5em;
+    width: 6em;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: var(--mainColorLight);
+    cursor: pointer;
+  }
+  
+  .navBtn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .navBtn {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .navStyling {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.5rem;
+      background-color: var(--mainColor);
+      transform: translateY(-100vh);
+    }
+  
+    .responsive_nav {
+      transform: none;
+    }
+  
+    .navCloseBtn {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+  
+    .aStyling {
+      font-size: 1.5rem;
+    }
+  }
+  
