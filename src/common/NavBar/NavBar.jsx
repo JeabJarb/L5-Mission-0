@@ -18,7 +18,7 @@ export default function NavBar() {
         <div className={style.logoContainer}>
           <img className={style.logoImg} src="logo.png" alt="logo" />{" "}
           {/* Logo image */}
-          <h3>MARKETING ASSOCIATION NZ</h3> {/* Logo text */}
+          <h3>MARKETING ASSOCIATION New Zealand</h3> {/* Logo text */}
         </div>
 
         {/* Navigation section */}
