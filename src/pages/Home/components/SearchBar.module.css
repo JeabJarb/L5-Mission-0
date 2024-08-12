@@ -34,4 +34,9 @@
     font-weight: 600;
     color: var(--mainColorLight);
     background-color: var(--secondaryColor);
+    cursor: pointer;
+}
+
+.btn :hover {
+    background-color: var(--mainColor);
 }
